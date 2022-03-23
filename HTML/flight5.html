@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>Flightee</title>
+    </head>
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(180deg,rgb(255, 255, 255),lightblue);
+        }
+        table {
+            position: absolute;
+            top: 160px;
+            left: 780px;
+            border-collapse:collapse 
+        }
+        td {    
+            border: 0.1em solid;    
+            text-align: center;
+            width: 10em;    
+        }    
+        th {    
+            border: 0.1em solid;     
+            text-align: center;
+            width: 10em;
+        } 
+        tr {    
+            height: 2em;  
+        }
+        div{
+            border: 1px solid;
+            margin: 40px;
+            padding: 40px;
+        }
+        #Adults{
+            position: absolute;
+            left: 100px;
+            top: 80px;
+        }
+        #Child{
+            position: absolute;
+            left: 340px;
+            top: 80px;
+        }
+        #Class{
+            position: absolute;
+            left: 580px;
+            top: 80px;
+        }
+        #fare{
+            position: absolute;
+            left: 780px;
+            top: 80px;
+        }
+        #buy{
+            position: absolute;
+            top: 140px;
+            left: 260px;
+        }
+        div:after {
+            content: "";
+            clear: both;
+            display: table;
+            margin: 40px;
+            padding: 40px;
+        }
+    </style>
+    <body>
+        <a href="\Programs\HTML\flight-log.html">
+            <img title="back" src="images/back.png" height="20" width="20">
+        </a>
+        <div>
+            <input id="Adults" title="Above 12" type="text" placeholder="No. of Adults">
+            <input id="Child" title="Below 12" type="text" placeholder="No.of Childern">
+            <select id="class" title="Enter the class">
+                <option>Economy Class</option>
+                <option>Permium Economy Class</option>
+                <option>Business Class</option>
+                <option>First class</option>
+                <option>Mixed CLass</option>
+            </select>
+            <select id="fare" title="Fare type">           
+                <option>Regular Fare</option>
+                <option>Senior Citizen Fare</option>
+                <option>Student Fare</option>
+                <option>Armed Forces Fare</option>
+            </select>
+            <a id="buy" href="/programs/html/pay.html">
+                <img src="images/buy.png" height="120" width="240">
+            </a>
+            <table>
+                <tr>
+                    <th>Start</th>
+                    <th>Destination</th>
+                </tr>
+                <tr>
+                    <td>Thiruvananthapuram(TRV)</td>
+                    <td>Coimbatore(CJB)</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
