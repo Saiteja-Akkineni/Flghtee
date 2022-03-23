@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Flightee</title>
+    </head>
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(180deg,rgb(255, 255, 255),lightblue);
+        }
+        #logo-main{
+            position: absolute;
+            left: 760px;
+            top: 60px;
+        }
+        #covid{
+            position: absolute;
+            top: 600px;
+        }
+        #wel{
+            position: absolute;
+            left: 30px;
+            top: -50px;
+        }
+        #p1{
+            position: absolute;
+            left: 150px;
+            top: 150px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #book{
+            position: absolute;
+            left: 200px;
+            top: 260px;
+        }
+        #food{
+            position: absolute;
+            left: 200px;
+            top: 320px;
+        }
+    </style>
+    <body>
+        <img id="logo-main" src="images/logo.PNG">
+        <img id="wel" src="images/welcom.png">
+        <div id="p1">
+            <p>Flightee is an online flight booking search service which facilitates<br> the purchase of airline 
+            tickets through third-party suppliers.<br>Reserve tickets now by pressing flight schedule
+            and get great discounts</p>
+        </div>
+        <a id="book" href="\Programs\HTML\flight-log.html">
+            <img id="flig-log" src="images/button.png">
+        </a>
+        <a id="food" href="\Programs\HTML\Foodcourt.html">
+            <img id="flig-log" src="images/button2.png">
+        </a>
+        <marquee id="covid" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
+            Learn about travel and visa restrictions related to Covid-19 by Bureau of Immigration
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/travelers/travel-during-covid19.html" target="_blank">
+                click here for more info
+            </a>
+        </marquee>
+    </body>
+</html>
